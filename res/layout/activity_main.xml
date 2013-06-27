@@ -4,13 +4,13 @@
     android:layout_height="match_parent"
     >
 
-    <SurfaceView
+    <com.opentok.view.PublisherView
         android:layout_width="480dp"
         android:layout_height="360dp"
         android:id="@+id/publisherview"
         android:layout_alignParentLeft="true" />
 
-    <SurfaceView
+    <com.opentok.view.SubscriberView
         android:layout_width="480dp"
         android:layout_height="360dp"
         android:id="@+id/subscriberview"
