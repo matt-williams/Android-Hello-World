@@ -33,6 +33,12 @@ public class BaseView extends SurfaceView implements SurfaceHolder.Callback, Ses
         super(context, attrs, defStyle);
     }
 
+    /**
+     * Connect to an OpenTok session.
+     * @param sessionId session ID for the OpenTok session
+     * @param tokenKey token key for the OpenTok session
+     * @param apiKey API key for this application
+     */
     public void connect(String sessionId, String tokenKey, String apiKey) {
         disconnectSession();
         mSessionId = sessionId;
@@ -41,6 +47,9 @@ public class BaseView extends SurfaceView implements SurfaceHolder.Callback, Ses
         connectSession();
     }
 
+    /**
+     * Disconnect from an OpenTok session.
+     */
     public void disconnect() {
         mSessionId = null;
         mTokenKey = null;
