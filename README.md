@@ -1,6 +1,8 @@
 Android-Hello-World
 ===================
 
+This is a refactored version of [OpenTok's](https://github.com/opentok) [Android-Hello-World](https://github.com/opentok/Android-Hello-World) sample application.  It extracts the OpenTok publisher and subscriber view function into the com.opentok.view.PublisherView and com.opentok.view.SubscriberView classes.  Each is a standard Android view with additional connect() and disconnect() methods.
+
 ## Notes
 
 * This application was built for the Nexus 7, and is locked in landscape orientation. Understandably, many device screens will not like the layout. Feel free to tinker around with the view in res/layout/activity_main.xml
